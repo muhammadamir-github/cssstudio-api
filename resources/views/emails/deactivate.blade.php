@@ -1,2 +1,0 @@
-<p class="heading">Hello {!! $username !!}<p>
-<p class="body">You have requested to deactivate your account.Please confirm this action by clicking this link: <a href="{!! $link !!}">Continue</a><br><br>Note: Your account will get deactivated and all of your saved data including profile information, history, elements, <br>animations etc will be deleted from our servers.You will not be able to login to this account again.<br><br>Thank you for using our service , we will miss you.<br><br> Regards <br> CSSStudio Team </p>

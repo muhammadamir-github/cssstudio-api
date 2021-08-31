@@ -1,2 +1,0 @@
-<p>Payment for {{ $description }} completed successfully.</p>
-<script>setTimeout(function(){window.location.href = 'http://www.amirqureshi.in/d/profile/index2.html?p=t&pi={{ $saleid }}&pi2={{ $paymentid }}'; },5000);</script>

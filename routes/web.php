@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,14 +13,6 @@
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/', function () {
     return view('welcome');
-});*/
-
-//Auth::routes();
-
-//Route::get('/home', 'HomeController@index')->name('home');
-Route::get('me/validation/signup/{key}','Signup\SignupController@validate_signup');
-Route::get('me/validation/update/{key}','User\UserController@validate_updateprofile');
-Route::get('me/validation/deactivate/{key}','User\UserController@validate_deactivate');
-//Route::get('payment/{plan}/execute/','User\UserController@payment_execute');
+});

@@ -1,2 +1,0 @@
-<p class="heading">Hello {!! $username !!}<p>
-<p class="body">Please verify that it’s you requesting to update your profile by clicking on this link: <a href="{!! $link !!}">Continue</a><br>If you did not requested to update your profile do not continue & ignore this mail.<br><br> Regards <br> CSSStudio Team </p>

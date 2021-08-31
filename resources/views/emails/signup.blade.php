@@ -1,2 +1,0 @@
-<p class="heading">Hello {!! $username !!}<p>
-<p class="body">We welcome you to cssstudio , confirm your email and get started by clicking this link: <a href="{!! $link !!}">Continue</a><br><br> Regards <br> CSSStudio Team </p>
