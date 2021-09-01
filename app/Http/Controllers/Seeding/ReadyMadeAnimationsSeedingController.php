@@ -10,10 +10,12 @@ use App\Models\Animation\Animation;
 class ReadyMadeAnimationsSeedingController extends Controller
 {
     public function seed(){
+        Animation::truncate();
+
         $readyMadeAnimations = collect([
             (object)["name" => "BOUNCE_", "css" => "    30% {\n        animation-timing-function: cubic-bezier(.755, .05, .855, .06);\n        transform: translate(-50%) translate3d(0, -30px, 0);\n    }\n    50%{\n    \ttransform: translate(-50%) translate3d(0, -5px, 0);\n    }\n    60% {\n        animation-timing-function: cubic-bezier(.755, .05, .855, .06);\n        transform: translate(-50%) translate3d(0, -10px, 0);\n    }\n    90% {\n        transform: translate(-50%) translate3d(0, -5px, 0);\n    }"],
             (object)["name" => "flash ", "css" => "@keyframes flash {\n    0%{\n        opacity: 1;\n    }\n    90%{\n        opacity: 0;\n    }\n}"],
-            //(object)["name" => "pulse", "css" => "@keyframes pulse {\r\n    0% {\r\n        transform: scaleX(1);\r\n    }\r\n    50% {\r\n        transform: scale3d(1.075, 1.075, 1.075);\r\n    }\r\n    100% {\r\n        transform: scaleX(1);\r\n    }\r\n}"},
+            (object)["name" => "pulse", "css" => "@keyframes pulse {\r\n    0% {\r\n        transform: scaleX(1);\r\n    }\r\n    50% {\r\n        transform: scale3d(1.075, 1.075, 1.075);\r\n    }\r\n    100% {\r\n        transform: scaleX(1);\r\n    }\r\n}"],
             (object)["name" => "rubberBand", "css" => "@keyframes rubberBand {\r\n    0% {\r\n        transform: scaleX(1);\r\n    }\r\n    30% {\r\n        transform: scale3d(1.25, .75, 1);\r\n    }\r\n    40% {\r\n        transform: scale3d(.75, 1.25, 1);\r\n    }\r\n    50% {\r\n        transform: scale3d(1.15, .85, 1);\r\n    }\r\n    65% {\r\n        transform: scale3d(.95, 1.05, 1);\r\n    }\r\n    75% {\r\n        transform: scale3d(1.05, .95, 1);\r\n    }\r\n    100% {\r\n       transform: scaleX(1);\r\n    }\r\n}"],
             (object)["name" => "shake", "css" => "@keyframes shake {\r\n    0%{\r\n        transform: translateZ(0);\r\n    }\r\n    10%,\r\n    30%,\r\n    50%,\r\n    70%,\r\n    90% {\r\n        transform: translate3d(-7px, 0, 0);\r\n    }\r\n    20%,\r\n    40%,\r\n    60%,\r\n    80%{\r\n        transform: translate3d(7px, 0, 0);\r\n    }\r\n}"],
             (object)["name" => "swing", "css" => "@keyframes swing {\r\n    20% {\r\n        transform: rotate(25deg);\r\n    }\r\n    40% {\r\n        transform: rotate(-20deg);\r\n    }\r\n    60% {\r\n        transform: rotate(15deg);\r\n    }\r\n    80% {\r\n        transform: rotate(-15deg);\r\n    }\r\n    100% {\r\n        transform: rotate(0deg);\r\n    }\r\n}"],
@@ -42,7 +44,7 @@ class ReadyMadeAnimationsSeedingController extends Controller
             (object)["name" => "FADE_IU_BIG", "css" => "@keyframes FADE_IU_BIG {\r\n    0% {\r\n        opacity: 0;\r\n        transform: translate3d(0, 4000px, 0);\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n        transform: none;\r\n    }\r\n}"],
             (object)["name" => "FADE_O", "css" => "@keyframes FADE_O {\r\n    0% {\r\n        opacity: 1;\r\n    }\r\n    100% {\r\n        opacity: 0;\r\n    }\r\n}"],
             (object)["name" => "FADE_OD", "css" => "@keyframes FADE_OD {\r\n    0% {\r\n        opacity: 1;\r\n    }\r\n    100% {\r\n        opacity: 0;\r\n        transform: translate3d(0, 100%, 0);\r\n    }\r\n}"],
-            //(object)["name" => "FADE_OD_BIG", "css" => "@keyframes FADE_OD_BIG {\r\n    0% {\r\n        opacity: 1;\r\n    }\r\n    100% {\r\n        opacity: 0;\r\n        transform: translate3d(0, 4000px, 0);\r\n    }\r\n}"},
+            (object)["name" => "FADE_OD_BIG", "css" => "@keyframes FADE_OD_BIG {\r\n    0% {\r\n        opacity: 1;\r\n    }\r\n    100% {\r\n        opacity: 0;\r\n        transform: translate3d(0, 4000px, 0);\r\n    }\r\n}"],
             (object)["name" => "FADE_OL_BIG", "css" => "@keyframes FADE_OL_BIG {\r\n    0% {\r\n        opacity: 1;\r\n    }\r\n    100% {\r\n        opacity: 0;\r\n        transform: translate3d(-4000px, 0, 0);\r\n    }\r\n}\r\n"],
             (object)["name" => "FADE_OR", "css" => "@keyframes FADE_OR {\r\n    0% {\r\n        opacity: 1;\r\n    }\r\n    100% {\r\n        opacity: 0;\r\n        transform: translate3d(100%, 0, 0);\r\n    }\r\n}"],
             (object)["name" => "FADE_OR_BIG", "css" => "@keyframes FADE_OR_BIG {\r\n    0% {\r\n        opacity: 1\r\n    }\r\n    100% {\r\n        opacity: 0;\r\n        transform: translate3d(4000px, 0, 0);\r\n    }\r\n}"],

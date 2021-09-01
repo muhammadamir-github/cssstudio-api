@@ -13,4 +13,14 @@ class AnimationController extends Controller
         $animations = Animation::where('user_id', 0)->get();
         return response()->json(['success' => $animations], 200);
     }
+
+    public function get($name){
+        $animation = Animation::where('name', $name)->first();
+
+        if($animation){
+           return response()->json(['css' => $animation->css]);
+        }else{
+           return response()->json(['message' => 'Animation not found.']);
+        }
+    }
 }
