@@ -27,6 +27,10 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
+    'GIPHY_API_KEY' => env('GIPHY_API_KEY', ''),
+    'GOOGLE_API_KEY' => env('GOOGLE_API_KEY', ''),
+    'PIXABAY_API_KEY' => env('PIXABAY_API_KEY', ''),
+    'UNSPLASH_CLIENT_ID' => env('UNSPLASH_CLIENT_ID', ''),
 
     /*
     |--------------------------------------------------------------------------
