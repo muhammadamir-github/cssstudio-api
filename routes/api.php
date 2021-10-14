@@ -12,4 +12,4 @@ Route::get('googleFonts','ThirdParty\GoogleFontsController@all');
 Route::get('search/thirdparty/images/{query}','ThirdParty\ImagesController@search');
 Route::get('animation/{name}','Animation\AnimationController@get');
 
-Route::get('seed/readyMadeAnimations','Seeding\ReadyMadeAnimationsSeedingController@seed');
+//Route::get('seed/readyMadeAnimations','Seeding\ReadyMadeAnimationsSeedingController@seed');

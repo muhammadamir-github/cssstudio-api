@@ -8,4 +8,5 @@
     </p>
     <p>Make sure to put your database and third party api credentials (GIPHY_API_KEY, GOOGLE_API_KEY, PIXABAY_API_KEY, UNSPLASH_CLIENT_ID) in the .env file.
     </p>
+    <p>You will also need to enable the route "seed/readyMadeAnimations" and make a get request to it in order to insert ready made animations into the database.</p>
 </div>
